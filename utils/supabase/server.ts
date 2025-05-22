@@ -9,7 +9,7 @@ export const createClient = (cookieStore: ReturnType<typeof cookies>) => {
         {
             cookies: {
                 async getAll() {
-                    return (await cookieStore).getAll();
+                    return (await cookieStore).getAll()
                 },
                 setAll(cookiesToSet) {
                     try {
